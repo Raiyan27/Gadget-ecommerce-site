@@ -13,6 +13,7 @@ const CardBox = () => {
       <h1 className="text-4xl text-center">Explore Cutting-Edge Gadgets</h1>
       <div className="flex justify-around container mx-auto border p-10 rounded-3xl mb-10">
         <div className="flex flex-col gap-4 p-4 ">
+          <button className="btn">Show All Gadgets</button>
           <button className="btn">Smartphones</button>
           <button className="btn">Cameras</button>
           <button className="btn">Audio</button>

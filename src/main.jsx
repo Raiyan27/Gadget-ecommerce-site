@@ -19,13 +19,18 @@ const router = createBrowserRouter([
         element: <Banner />,
       },
       {
-        path: "cardBox/:id",
+        path: "gadget/:id",
         element: <GadgetDetail />,
         loader: () => fetch("gadgets.json"),
       },
       {
         path: "dashboard",
         element: <DashBoard />,
+        loader: () => fetch("gadgets.json"),
+      },
+      {
+        path: "statistics",
+        element: <div>NOTHING HERE</div>,
       },
     ],
   },

@@ -1,5 +1,7 @@
 import React from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import { addToFavList } from "../utils/addToFav";
+import { addToCartList } from "../utils/addToCart";
 
 const GadgetDetail = () => {
   const { id } = useParams();
@@ -16,6 +18,12 @@ const GadgetDetail = () => {
     rating,
   } = gadget;
   const roundedRating = Math.round(rating * 2) / 2;
+  const addToFav = (id) => {
+    addToFavList(id);
+  };
+  const addToCart = (id) => {
+    addToCartList(id);
+  };
   return (
     <>
       <div className="relative">
@@ -135,10 +143,16 @@ const GadgetDetail = () => {
             </div>
 
             <div className="flex items-center gap-3 mt-4">
-              <button className="px-6 py-2 bg-purple-600 text-white rounded-lg flex items-center gap-2 hover:bg-purple-700">
+              <button
+                onClick={() => addToCart(id)}
+                className="px-6 py-2 bg-purple-600 text-white rounded-lg flex items-center gap-2 hover:bg-purple-700"
+              >
                 Add To Cart
               </button>
-              <button className="px-4 py-2 border rounded-lg text-purple-600 border-purple-600 hover:bg-purple-100">
+              <button
+                onClick={() => addToFav(id)}
+                className="px-4 py-2 border rounded-lg text-purple-600 border-purple-600 hover:bg-purple-100"
+              >
                 favorite_border
               </button>
             </div>

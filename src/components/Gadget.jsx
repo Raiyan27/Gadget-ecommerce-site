@@ -14,8 +14,10 @@ const Gadget = ({ gadget }) => {
           <h1 className="text-lg">{title}</h1>
           <p>Price: ${price}</p>
           <div className="card-actions justify-end">
-            <Link to={`cardbox/${id}`}>
-              <button className="btn btn-primary">Buy Now</button>
+            <Link to={`gadget/${id}`}>
+              <button className="btn btn-primary bg-[#9538E2] text-white">
+                Buy Now
+              </button>
             </Link>
           </div>
         </div>
