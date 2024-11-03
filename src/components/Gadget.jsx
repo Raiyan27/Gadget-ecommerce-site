@@ -5,9 +5,13 @@ const Gadget = ({ gadget }) => {
 
   return (
     <>
-      <div className="card w-[350px] bg-white ">
-        <div className="p-4">
-          <img className="rounded-xl w-fit" src={image} alt={title} />
+      <div className="card   bg-white ">
+        <div className="p-4 ">
+          <img
+            className="rounded-xl flex justify-center items-center w-[370px] h-[350px]"
+            src={image}
+            alt={title}
+          />
         </div>
         <div className="card-body">
           <h2 className="card-title">{category}</h2>

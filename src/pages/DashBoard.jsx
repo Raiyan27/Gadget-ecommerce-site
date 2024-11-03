@@ -76,8 +76,12 @@ const DashBoard = () => {
                   key={item.id}
                   className="card bg-gray-100 p-4 rounded-lg shadow-md flex-row gap-4 my-4"
                 >
-                  <div className="w-32">
-                    <img className="rounded-xl" src={item.image} alt="" />
+                  <div className="">
+                    <img
+                      className="rounded-xl w-32 h-32"
+                      src={item.image}
+                      alt=""
+                    />
                   </div>
                   <div className="flex flex-col justify-center">
                     <h3 className="text-lg font-bold">{item.title}</h3>
@@ -102,8 +106,12 @@ const DashBoard = () => {
                   key={item.id}
                   className="card bg-gray-100 p-4 rounded-lg shadow-md flex-row gap-4 my-4"
                 >
-                  <div className="w-32">
-                    <img className="rounded-xl" src={item.image} alt="" />
+                  <div className="">
+                    <img
+                      className="rounded-xl w-32 h-32"
+                      src={item.image}
+                      alt=""
+                    />
                   </div>
                   <div className="flex flex-col justify-center">
                     <h3 className="text-lg font-bold">{item.title}</h3>
