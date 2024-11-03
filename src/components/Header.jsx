@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -38,13 +39,13 @@ const Header = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Home</a>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
             <a>Statistics</a>
           </li>
           <li>
-            <a>Dashboard</a>
+            <NavLink to="/dashboard">Dashboard</NavLink>
           </li>
         </ul>
       </div>

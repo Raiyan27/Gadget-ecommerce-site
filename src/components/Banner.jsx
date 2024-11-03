@@ -1,3 +1,5 @@
+import CardBox from "./CardBox.jsx";
+
 const Banner = () => {
   return (
     <>
@@ -22,6 +24,7 @@ const Banner = () => {
           <img src="./banner.jpg" alt="VR Headset" className="" />
         </div>
       </div>
+      <CardBox />
     </>
   );
 };

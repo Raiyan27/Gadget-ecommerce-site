@@ -1,0 +1,347 @@
+[
+  {
+    "id": "1",
+    "title": "Smartphone Alpha Pro",
+    "image": "https://i.ibb.co.com/Sf5BH3J/Apple-i-Phone-16-Pro-hero-geo-240909-inline-jpg-large.jpg",
+    "category": "Smartphones",
+    "price": 799.99,
+    "description": "A powerful smartphone with a stunning OLED display and fast performance.",
+    "Specification": [
+      "6.7-inch OLED display",
+      "128GB storage",
+      "Quad camera",
+      "5G connectivity"
+    ],
+    "availability": true,
+    "rating": 4.4,
+    "brand": "Alpha Corp",
+    "color": "Black"
+  },
+  {
+    "id": "2",
+    "title": "Smartphone Beta Lite",
+    "image": "https://example.com/images/smartphone-beta-lite.jpg",
+    "category": "Smartphones",
+    "price": 599.99,
+    "description": "A compact smartphone with high resolution camera and long battery life.",
+    "Specification": [
+      "5.8-inch LCD display",
+      "64GB storage",
+      "Dual camera",
+      "4G connectivity"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "brand": "Beta Inc",
+    "color": "Silver"
+  },
+  {
+    "id": "3",
+    "title": "Smartphone Gamma Max",
+    "image": "https://example.com/images/smartphone-gamma-max.jpg",
+    "category": "Smartphones",
+    "price": 999.99,
+    "description": "High-end smartphone with advanced AI-powered camera features.",
+    "Specification": [
+      "6.9-inch AMOLED display",
+      "256GB storage",
+      "Triple camera",
+      "5G connectivity"
+    ],
+    "availability": false,
+    "rating": 4.9,
+    "brand": "Gamma Tech",
+    "color": "Blue"
+  },
+  {
+    "id": "4",
+    "title": "Smartphone Delta X",
+    "image": "https://example.com/images/smartphone-delta-x.jpg",
+    "category": "Smartphones",
+    "price": 699.99,
+    "description": "Affordable smartphone with excellent battery life and decent performance.",
+    "Specification": [
+      "6.1-inch LCD display",
+      "128GB storage",
+      "Dual camera",
+      "4G connectivity"
+    ],
+    "availability": true,
+    "rating": 4.4,
+    "brand": "Delta Electronics",
+    "color": "White"
+  },
+  {
+    "id": "5",
+    "title": "Smartphone Epsilon",
+    "image": "https://example.com/images/smartphone-epsilon.jpg",
+    "category": "Smartphones",
+    "price": 899.99,
+    "description": "A sleek smartphone with powerful performance and excellent low-light camera.",
+    "Specification": [
+      "6.4-inch OLED display",
+      "256GB storage",
+      "Triple camera",
+      "5G connectivity"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "brand": "Epsilon Mobile",
+    "color": "Green"
+  },
+  {
+    "id": "6",
+    "title": "Smartphone Zeta Ultra",
+    "image": "https://example.com/images/smartphone-zeta-ultra.jpg",
+    "category": "Smartphones",
+    "price": 1049.99,
+    "description": "High-end smartphone with advanced features and a stunning display.",
+    "Specification": [
+      "6.8-inch OLED display",
+      "512GB storage",
+      "Quad camera",
+      "5G connectivity"
+    ],
+    "availability": false,
+    "rating": 5.0,
+    "brand": "Zeta Systems",
+    "color": "Gray"
+  },
+  {
+    "id": "7",
+    "title": "Smartphone Eta Compact",
+    "image": "https://example.com/images/smartphone-eta-compact.jpg",
+    "category": "Smartphones",
+    "price": 549.99,
+    "description": "Compact smartphone with a high-quality display and solid performance.",
+    "Specification": [
+      "5.5-inch LCD display",
+      "64GB storage",
+      "Single camera",
+      "4G connectivity"
+    ],
+    "availability": true,
+    "rating": 4.2,
+    "brand": "Eta Tech",
+    "color": "Gold"
+  },
+  {
+    "id": "8",
+    "title": "Smartphone Theta XL",
+    "image": "https://example.com/images/smartphone-theta-xl.jpg",
+    "category": "Smartphones",
+    "price": 750.99,
+    "description": "Large display smartphone with dual SIM support and great battery life.",
+    "Specification": [
+      "6.5-inch LCD display",
+      "128GB storage",
+      "Dual camera",
+      "5G connectivity"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "brand": "Theta Global",
+    "color": "Black"
+  },
+  {
+    "id": "9",
+    "title": "Camera AlphaShot",
+    "image": "https://example.com/images/camera-alphashot.jpg",
+    "category": "Cameras",
+    "price": 499.99,
+    "description": "DSLR camera with high resolution and great performance in low light.",
+    "Specification": [
+      "24MP sensor",
+      "4K video",
+      "Wi-Fi enabled",
+      "Interchangeable lens"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "brand": "AlphaCam",
+    "color": "Black"
+  },
+  {
+    "id": "10",
+    "title": "Camera BetaZoom",
+    "image": "https://example.com/images/camera-betazoom.jpg",
+    "category": "Cameras",
+    "price": 699.99,
+    "description": "Compact digital camera with powerful zoom and easy-to-use controls.",
+    "Specification": [
+      "16MP sensor",
+      "Optical zoom 50x",
+      "1080p video",
+      "Wi-Fi"
+    ],
+    "availability": true,
+    "rating": 4.4,
+    "brand": "BetaCam",
+    "color": "Silver"
+  },
+  {
+    "id": "11",
+    "title": "Camera GammaPlus",
+    "image": "https://example.com/images/camera-gammaplus.jpg",
+    "category": "Cameras",
+    "price": 899.99,
+    "description": "Mirrorless camera with advanced autofocus and great image stabilization.",
+    "Specification": [
+      "30MP sensor",
+      "4K video",
+      "Wi-Fi",
+      "Interchangeable lens"
+    ],
+    "availability": false,
+    "rating": 4.8,
+    "brand": "Gamma Photography",
+    "color": "Black"
+  },
+  {
+    "id": "12",
+    "title": "Camera DeltaWide",
+    "image": "https://example.com/images/camera-deltawide.jpg",
+    "category": "Cameras",
+    "price": 649.99,
+    "description": "Wide-angle compact camera, perfect for landscape photography.",
+    "Specification": [
+      "20MP sensor",
+      "1080p video",
+      "Wide-angle lens",
+      "Wi-Fi enabled"
+    ],
+    "availability": true,
+    "rating": 4.3,
+    "brand": "DeltaCam",
+    "color": "Gray"
+  },
+  {
+    "id": "13",
+    "title": "Camera Epsilon Pro",
+    "image": "https://example.com/images/camera-epsilon-pro.jpg",
+    "category": "Cameras",
+    "price": 1299.99,
+    "description": "Professional DSLR camera with full-frame sensor and superb image quality.",
+    "Specification": [
+      "42MP sensor",
+      "4K video",
+      "Wi-Fi",
+      "Interchangeable lens"
+    ],
+    "availability": true,
+    "rating": 4.9,
+    "brand": "Epsilon Images",
+    "color": "Black"
+  },
+  {
+    "id": "14",
+    "title": "Camera Zeta Capture",
+    "image": "https://example.com/images/camera-zeta-capture.jpg",
+    "category": "Cameras",
+    "price": 749.99,
+    "description": "Compact mirrorless camera with excellent image stabilization.",
+    "Specification": ["24MP sensor", "4K video", "Wi-Fi enabled", "Fixed lens"],
+    "availability": false,
+    "rating": 4.6,
+    "brand": "Zeta Photography",
+    "color": "Black"
+  },
+  {
+    "id": "15",
+    "title": "Wireless Earbuds Sonic",
+    "image": "https://example.com/images/earbuds-sonic.jpg",
+    "category": "Audio Devices",
+    "price": 149.99,
+    "description": "High-quality wireless earbuds with active noise cancellation.",
+    "Specification": [
+      "Bluetooth 5.0",
+      "Noise cancelling",
+      "Battery life: 8 hours"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "brand": "SonicSound",
+    "color": "White"
+  },
+  {
+    "id": "16",
+    "title": "Bluetooth Speaker BeatBox",
+    "image": "https://example.com/images/speaker-beatbox.jpg",
+    "category": "Audio Devices",
+    "price": 99.99,
+    "description": "Portable Bluetooth speaker with deep bass and long battery life.",
+    "Specification": [
+      "Bluetooth 5.0",
+      "Battery life: 10 hours",
+      "Water resistant"
+    ],
+    "availability": true,
+    "rating": 4.3,
+    "brand": "BeatBox",
+    "color": "Blue"
+  },
+  {
+    "id": "17",
+    "title": "Noise-Cancelling Headphones AlphaNoise",
+    "image": "https://example.com/images/headphones-alphanoise.jpg",
+    "category": "Audio Devices",
+    "price": 199.99,
+    "description": "Over-ear headphones with premium sound quality and noise cancellation.",
+    "Specification": [
+      "Bluetooth 5.0",
+      "Noise cancelling",
+      "Battery life: 20 hours"
+    ],
+    "availability": false,
+    "rating": 4.6,
+    "brand": "AlphaSound",
+    "color": "Black"
+  },
+  {
+    "id": "18",
+    "title": "Smart Speaker EchoPlus",
+    "image": "https://example.com/images/speaker-echoplus.jpg",
+    "category": "Audio Devices",
+    "price": 129.99,
+    "description": "Smart speaker with voice control and high-quality sound.",
+    "Specification": ["Wi-Fi enabled", "Voice control", "Bluetooth"],
+    "availability": true,
+    "rating": 4.4,
+    "brand": "EchoAudio",
+    "color": "Gray"
+  },
+  {
+    "id": "19",
+    "title": "True Wireless Earbuds Flex",
+    "image": "https://example.com/images/earbuds-flex.jpg",
+    "category": "Audio Devices",
+    "price": 89.99,
+    "description": "Compact wireless earbuds with ergonomic design and great sound.",
+    "Specification": [
+      "Bluetooth 5.1",
+      "Water resistant",
+      "Battery life: 5 hours"
+    ],
+    "availability": true,
+    "rating": 4.2,
+    "brand": "FlexSound",
+    "color": "Black"
+  },
+  {
+    "id": "20",
+    "title": "Portable Bluetooth Speaker MaxBoom",
+    "image": "https://example.com/images/speaker-maxboom.jpg",
+    "category": "Audio Devices",
+    "price": 109.99,
+    "description": "Portable speaker with powerful sound and long battery life.",
+    "Specification": [
+      "Bluetooth 5.0",
+      "Battery life: 15 hours",
+      "Water resistant"
+    ],
+    "availability": false,
+    "rating": 4.5,
+    "brand": "MaxAudio",
+    "color": "Red"
+  }
+]

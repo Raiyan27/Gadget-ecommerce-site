@@ -8,7 +8,7 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          "base-100": "#ffffff",
+          "base-100": "#ECECEC",
         },
       },
     ],

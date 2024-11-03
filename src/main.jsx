@@ -6,6 +6,7 @@ import Root from "./pages/Root.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
 import Banner from "./components/Banner.jsx";
 import DashBoard from "./pages/DashBoard.jsx";
+import GadgetDetail from "./components/GadgetDetail.jsx";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,11 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Banner />,
+      },
+      {
+        path: "cardBox/:id",
+        element: <GadgetDetail />,
+        loader: () => fetch("gadgets.json"),
       },
       {
         path: "dashboard",
