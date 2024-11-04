@@ -18,5 +18,7 @@ const addToFavList = (id) => {
     localStorage.setItem("favlist", store);
   }
 };
-
-export { addToFavList, getFavList };
+const setFavList = (favList) => {
+  localStorage.setItem("favlist", JSON.stringify(favList));
+};
+export { addToFavList, getFavList, setFavList };

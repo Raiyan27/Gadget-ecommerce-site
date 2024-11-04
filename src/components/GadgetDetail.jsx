@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { addToFavList, getFavList } from "../utils/addToFav";
 import { addToCartList, getCartList } from "../utils/addToCart";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const GadgetDetail = () => {
   const { id } = useParams();
   const data = useLoaderData();
-
   const gadget = data.find((gadget) => gadget.id === id);
+
   const {
     title,
     price,
@@ -17,17 +19,35 @@ const GadgetDetail = () => {
     Specification,
     rating,
   } = gadget;
+
   const roundedRating = Math.round(rating * 2) / 2;
+
+  const [favDisabled, setFavDisabled] = useState(false);
+  const [cartDisabled, setCartDisabled] = useState(false);
+
+  useEffect(() => {
+    const favList = getFavList();
+    const cartList = getCartList();
+
+    setFavDisabled(favList.includes(id));
+    setCartDisabled(cartList.includes(id) || !availability);
+  }, []);
+
   const addToFav = (id) => {
     addToFavList(id);
+    setFavDisabled(true);
+    toast.success("Added to favorites!", { position: "top-center" });
   };
+
   const addToCart = (id) => {
     addToCartList(id);
+    setCartDisabled(true);
+    toast.success("Added to cart!", { position: "top-center" });
   };
-  const cart = getCartList();
-  const fav = getFavList();
+
   return (
     <>
+      <ToastContainer />
       <div className="relative">
         <div className="text-center bg-[#9538E2] p-10 pb-80">
           <div className="max-w-3xl mx-auto">
@@ -43,7 +63,11 @@ const GadgetDetail = () => {
         </div>
         <div className="flex max-w-4xl mx-auto bg-white p-10 gap-12 rounded-lg shadow-lg -mt-72 mb-32">
           <div className="max-w-[350px] rounded-lg p-4">
-            <img src={image} alt="Gadget" className="w-full rounded-lg" />
+            <img
+              src={image}
+              alt="Gadget"
+              className="w-[500px] h-[500px] rounded-lg"
+            />
           </div>
           <div className="flex flex-col gap-5">
             <div>
@@ -53,10 +77,10 @@ const GadgetDetail = () => {
               </p>
             </div>
             <div
-              className={`inline-block px-3 py-1 rounded-full text-xs font-medium border ${
+              className={`inline-block px-3 py-1 rounded-full text-xs font-medium border  ${
                 availability
-                  ? "bg-green-100 text-green-800 border-green-400"
-                  : "bg-red-100 text-red-800 border-red-400"
+                  ? "bg-green-100 text-green-800 border-green-400 w-[70px]"
+                  : "bg-red-100 text-red-800 border-red-400 w-[95px]"
               }`}
             >
               {availability ? "In Stock" : "Out of Stock"}
@@ -82,7 +106,6 @@ const GadgetDetail = () => {
                   name="rating-10"
                   className="rating-hidden"
                 />
-
                 <input
                   type="radio"
                   name="rating-10"
@@ -149,13 +172,27 @@ const GadgetDetail = () => {
             <div className="flex items-center gap-3 mt-4">
               <button
                 onClick={() => addToCart(id)}
-                className="px-6 py-2 bg-purple-600 text-white rounded-lg flex items-center gap-2 hover:bg-purple-700"
+                disabled={cartDisabled}
+                className={`px-6 py-2 text-white rounded-lg flex items-center gap-2 ${
+                  cartDisabled || !availability
+                    ? "bg-gray-400 cursor-not-allowed"
+                    : "bg-purple-600 hover:bg-purple-700"
+                }`}
               >
-                Add To Cart
+                {availability
+                  ? cartDisabled
+                    ? "Already in Cart"
+                    : "Add to Cart"
+                  : "Out of Stock"}
               </button>
               <button
                 onClick={() => addToFav(id)}
-                className="btn btn-circle bg-white border rounded-full text-purple-600 border-purple-600 hover:bg-purple-100"
+                disabled={favDisabled}
+                className={`btn btn-circle bg-pink-100 border rounded-full ${
+                  favDisabled
+                    ? "bg-gray-900 cursor-not-allowed"
+                    : "text-purple-600 border-purple-600 hover:bg-purple-100"
+                }`}
               >
                 <img className="w-3/5" src="/heart.png" alt="" />
               </button>

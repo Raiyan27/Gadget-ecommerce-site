@@ -73,7 +73,7 @@ const CardBox = () => {
             ))
           ) : (
             <div className="col-span-3">
-              <p className="text-6xl text-[#9538E2]">
+              <p className="text-6xl text-[#9538E2] p-8">
                 No gadgets available in the {selectedCategory} category.
               </p>
             </div>

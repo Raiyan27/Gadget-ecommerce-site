@@ -18,5 +18,7 @@ const addToCartList = (id) => {
     localStorage.setItem("cartlist", store);
   }
 };
-
-export { addToCartList, getCartList };
+const setCartList = (cartList) => {
+  localStorage.setItem("cartlist", JSON.stringify(cartList));
+};
+export { addToCartList, getCartList, setCartList };
