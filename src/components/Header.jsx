@@ -82,7 +82,7 @@ const Header = () => {
       <div className="navbar-end gap-4">
         <div className="relative">
           <button className="btn btn-circle btn btn-circle bg-white ">
-            <img className="w-3/5" src="./cart.png" alt="" />
+            <img className="w-3/5" src="/cart.png" alt="" />
           </button>
           <h1 className="absolute bottom-8 left-8 text-red-900 font-bold bg-yellow-300 rounded-full px-2">
             {cartLength !== 0 ? cartLength : ""}
@@ -90,7 +90,7 @@ const Header = () => {
         </div>
         <div className="relative">
           <button className="btn btn-circle btn btn-circle bg-white ">
-            <img className="w-3/5" src="./heart.png" alt="" />
+            <img className="w-3/5" src="/heart.png" alt="" />
           </button>
           <h1 className="absolute bottom-8 left-8 text-red-900 font-bold bg-yellow-300 rounded-full px-2">
             {favLength !== 0 ? favLength : ""}

@@ -1,7 +1,7 @@
 import React from "react";
 import { useLoaderData, useParams } from "react-router-dom";
-import { addToFavList } from "../utils/addToFav";
-import { addToCartList } from "../utils/addToCart";
+import { addToFavList, getFavList } from "../utils/addToFav";
+import { addToCartList, getCartList } from "../utils/addToCart";
 
 const GadgetDetail = () => {
   const { id } = useParams();
@@ -24,6 +24,8 @@ const GadgetDetail = () => {
   const addToCart = (id) => {
     addToCartList(id);
   };
+  const cart = getCartList();
+  const fav = getFavList();
   return (
     <>
       <div className="relative">
@@ -71,7 +73,9 @@ const GadgetDetail = () => {
               </ul>
             </div>
             <div>
-              <h2 className="font-semibold text-lg text-gray-800">Rating:</h2>
+              <h2 className="font-semibold text-lg text-gray-800">
+                Rating: {rating}
+              </h2>
               <div className="rating rating-lg rating-half">
                 <input
                   type="radio"
@@ -151,9 +155,9 @@ const GadgetDetail = () => {
               </button>
               <button
                 onClick={() => addToFav(id)}
-                className="px-4 py-2 border rounded-lg text-purple-600 border-purple-600 hover:bg-purple-100"
+                className="btn btn-circle bg-white border rounded-full text-purple-600 border-purple-600 hover:bg-purple-100"
               >
-                favorite_border
+                <img className="w-3/5" src="/heart.png" alt="" />
               </button>
             </div>
           </div>
