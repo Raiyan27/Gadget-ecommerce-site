@@ -18,6 +18,23 @@
     "color": "Black"
   },
   {
+    "id": "16",
+    "title": "Bluetooth Speaker BeatBox",
+    "image": "https://i.ibb.co.com/cr6PZKp/image-photograph-pair-hifi-level-music-speakers-with-two-speakers-black-background-88135-33694.jpg",
+    "category": "Audio Devices",
+    "price": 99.99,
+    "description": "Portable Bluetooth speaker with deep bass and long battery life.",
+    "Specification": [
+      "Bluetooth 5.0",
+      "Battery life: 10 hours",
+      "Water resistant"
+    ],
+    "availability": true,
+    "rating": 4.3,
+    "brand": "BeatBox",
+    "color": "Blue"
+  },
+  {
     "id": "2",
     "title": "Smartphone Beta Lite",
     "image": "https://i.ibb.co.com/sWv9D3s/galaxy-s24-ultra-highlights-camera-overview-mo.jpg",
@@ -38,7 +55,7 @@
   {
     "id": "3",
     "title": "Smartphone Gamma Max",
-    "image": "https://example.com/images/smartphone-gamma-max.jpg",
+    "image": "https://i.ibb.co.com/3r3TK97/images-q-tbn-ANd9-Gc-Te-DXfs-Pn-X9-OCba2kn-Lj-x-DMqd-Gr2w8-Jn-EXNQ-s.jpg",
     "category": "Smartphones",
     "price": 999.99,
     "description": "High-end smartphone with advanced AI-powered camera features.",
@@ -56,7 +73,7 @@
   {
     "id": "4",
     "title": "Smartphone Delta X",
-    "image": "https://example.com/images/smartphone-delta-x.jpg",
+    "image": "https://i.ibb.co.com/HCGY30H/One-Plus-11-5-G-Sports-a-Big-Black-Hole-Styled-Hasselblad-Camera-Bump.jpg",
     "category": "Smartphones",
     "price": 699.99,
     "description": "Affordable smartphone with excellent battery life and decent performance.",
@@ -74,7 +91,7 @@
   {
     "id": "5",
     "title": "Smartphone Epsilon",
-    "image": "https://example.com/images/smartphone-epsilon.jpg",
+    "image": "https://i.ibb.co.com/d4VNqRt/galaxy-z-fold5-highlights-colors-phantom-black-mo.jpg",
     "category": "Smartphones",
     "price": 899.99,
     "description": "A sleek smartphone with powerful performance and excellent low-light camera.",
@@ -92,7 +109,7 @@
   {
     "id": "6",
     "title": "Smartphone Zeta Ultra",
-    "image": "https://example.com/images/smartphone-zeta-ultra.jpg",
+    "image": "https://i.ibb.co.com/y0cBrdG/m-123.png",
     "category": "Smartphones",
     "price": 1049.99,
     "description": "High-end smartphone with advanced features and a stunning display.",
@@ -110,7 +127,7 @@
   {
     "id": "7",
     "title": "Smartphone Eta Compact",
-    "image": "https://example.com/images/smartphone-eta-compact.jpg",
+    "image": "https://i.ibb.co.com/CVrgLdL/9aa762ec1eb474a2be5846756b9c5a21.jpg",
     "category": "Smartphones",
     "price": 549.99,
     "description": "Compact smartphone with a high-quality display and solid performance.",
@@ -128,7 +145,7 @@
   {
     "id": "8",
     "title": "Smartphone Theta XL",
-    "image": "https://example.com/images/smartphone-theta-xl.jpg",
+    "image": "https://i.ibb.co.com/tzk6pRp/91-l-4-P7j-L.jpg",
     "category": "Smartphones",
     "price": 750.99,
     "description": "Large display smartphone with dual SIM support and great battery life.",
@@ -146,7 +163,7 @@
   {
     "id": "9",
     "title": "Camera AlphaShot",
-    "image": "https://example.com/images/camera-alphashot.jpg",
+    "image": "https://i.ibb.co.com/3TpzL3S/16-06-2023-best-dslr-camera-23443226.webp",
     "category": "Cameras",
     "price": 499.99,
     "description": "DSLR camera with high resolution and great performance in low light.",
@@ -164,7 +181,7 @@
   {
     "id": "10",
     "title": "Camera BetaZoom",
-    "image": "https://example.com/images/camera-betazoom.jpg",
+    "image": "https://i.ibb.co.com/Qppk3Qq/pngtree-man-holds-up-a-canon-dslr-camera-image-2509959.jpg",
     "category": "Cameras",
     "price": 699.99,
     "description": "Compact digital camera with powerful zoom and easy-to-use controls.",
@@ -182,7 +199,7 @@
   {
     "id": "11",
     "title": "Camera GammaPlus",
-    "image": "https://example.com/images/camera-gammaplus.jpg",
+    "image": "https://i.ibb.co.com/fC82d8L/pexels-photo-274973.jpg",
     "category": "Cameras",
     "price": 899.99,
     "description": "Mirrorless camera with advanced autofocus and great image stabilization.",
@@ -200,7 +217,7 @@
   {
     "id": "12",
     "title": "Camera DeltaWide",
-    "image": "https://example.com/images/camera-deltawide.jpg",
+    "image": "https://i.ibb.co.com/nfHtPyp/e75ddbda351d44e24b6b8099fa200aad.jpg",
     "category": "Cameras",
     "price": 649.99,
     "description": "Wide-angle compact camera, perfect for landscape photography.",
@@ -218,7 +235,7 @@
   {
     "id": "13",
     "title": "Camera Epsilon Pro",
-    "image": "https://example.com/images/camera-epsilon-pro.jpg",
+    "image": "https://i.ibb.co.com/J3DtyjT/canon-camera-e1704554602159.jpg",
     "category": "Cameras",
     "price": 1299.99,
     "description": "Professional DSLR camera with full-frame sensor and superb image quality.",
@@ -236,7 +253,7 @@
   {
     "id": "14",
     "title": "Camera Zeta Capture",
-    "image": "https://example.com/images/camera-zeta-capture.jpg",
+    "image": "https://i.ibb.co.com/6135jk1/1dx3-design-1-16-9-Large-wid-3780-hei-2127-fmt-webp-alpha.webp",
     "category": "Cameras",
     "price": 749.99,
     "description": "Compact mirrorless camera with excellent image stabilization.",
@@ -249,7 +266,7 @@
   {
     "id": "15",
     "title": "Wireless Earbuds Sonic",
-    "image": "https://example.com/images/earbuds-sonic.jpg",
+    "image": "https://i.ibb.co.com/vHQFYF7/239682-a-long-lens-canon-camera-on-a-wooden-surfacelong-l.jpg",
     "category": "Audio Devices",
     "price": 149.99,
     "description": "High-quality wireless earbuds with active noise cancellation.",
@@ -263,27 +280,11 @@
     "brand": "SonicSound",
     "color": "White"
   },
-  {
-    "id": "16",
-    "title": "Bluetooth Speaker BeatBox",
-    "image": "https://example.com/images/speaker-beatbox.jpg",
-    "category": "Audio Devices",
-    "price": 99.99,
-    "description": "Portable Bluetooth speaker with deep bass and long battery life.",
-    "Specification": [
-      "Bluetooth 5.0",
-      "Battery life: 10 hours",
-      "Water resistant"
-    ],
-    "availability": true,
-    "rating": 4.3,
-    "brand": "BeatBox",
-    "color": "Blue"
-  },
+
   {
     "id": "17",
     "title": "Noise-Cancelling Headphones AlphaNoise",
-    "image": "https://example.com/images/headphones-alphanoise.jpg",
+    "image": "https://i.ibb.co.com/JrCxS7n/images-q-tbn-ANd9-Gc-Q7t-DQm68gk-Yp2n-IR8kp9-BVh-Ykr8-Ac52w8-HUQ-s.jpg",
     "category": "Audio Devices",
     "price": 199.99,
     "description": "Over-ear headphones with premium sound quality and noise cancellation.",
@@ -300,7 +301,7 @@
   {
     "id": "18",
     "title": "Smart Speaker EchoPlus",
-    "image": "https://example.com/images/speaker-echoplus.jpg",
+    "image": "https://i.ibb.co.com/DQ8qWMW/black-portable-bluetooth-speaker-black-portable-bluetooth-speaker-wireless-boom-box-colored-gradient.jpg",
     "category": "Audio Devices",
     "price": 129.99,
     "description": "Smart speaker with voice control and high-quality sound.",
@@ -313,7 +314,7 @@
   {
     "id": "19",
     "title": "True Wireless Earbuds Flex",
-    "image": "https://example.com/images/earbuds-flex.jpg",
+    "image": "https://i.ibb.co.com/bQGKKYS/tws-bluetooth-earbuds-black-color-black-background-ai-generated-868037-782.jpg",
     "category": "Audio Devices",
     "price": 89.99,
     "description": "Compact wireless earbuds with ergonomic design and great sound.",
@@ -330,7 +331,7 @@
   {
     "id": "20",
     "title": "Portable Bluetooth Speaker MaxBoom",
-    "image": "https://example.com/images/speaker-maxboom.jpg",
+    "image": "https://i.ibb.co.com/0GnBCYY/dinamitador-retro-da-m-sica-do-gueto-isolado-no-preto-com-trajeto-de-grampeamento-62107822.jpg",
     "category": "Audio Devices",
     "price": 109.99,
     "description": "Portable speaker with powerful sound and long battery life.",

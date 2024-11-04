@@ -3,7 +3,7 @@ import CardBox from "./CardBox.jsx";
 const Banner = () => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center border bg-[#9538E2] container mx-auto rounded-3xl p-20 relative pb-72 mb-96">
+      <div className="flex flex-col items-center justify-center border bg-[#9538E2] container mx-auto rounded-b-3xl p-20  relative pb-72 mb-96 -mt-5 -z-10">
         <div className="text-center">
           <div className="max-w-3xl mx-auto">
             <h1 className="text-5xl font-bold text-white mb-4">

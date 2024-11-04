@@ -1,9 +1,27 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+import { getCartList } from "../utils/addToCart";
+import { getFavList } from "../utils/addToFav";
 
 const Header = () => {
+  const location = useLocation();
+
+  const isHome = location.pathname === "/";
+  const isStatistics = location.pathname === "/statistics";
+  const isDashboard = location.pathname === "/dashboard";
+  const inCart = getCartList();
+
+  const cartLength = inCart.length;
+
+  const inFav = getFavList();
+  const favLength = inFav.length;
+
   return (
-    <div className="navbar bg-base-100 container mx-auto">
+    <div
+      className={`navbar container mx-auto ${
+        isHome ? "bg-[#9538E2] mt-10 rounded-t-3xl" : "bg-base-100"
+      }`}
+    >
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -39,19 +57,45 @@ const Header = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/" className={`text-lg  ${isHome ? "underline" : ""}`}>
+              Home
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/statistics">Statistics</NavLink>
+            <NavLink
+              to="/statistics"
+              className={`text-lg ${isStatistics ? "underline" : ""}`}
+            >
+              Statistics
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/dashboard">Dashboard</NavLink>
+            <NavLink
+              to="/dashboard"
+              className={`text-lg ${isDashboard ? "underline" : ""}`}
+            >
+              Dashboard
+            </NavLink>
           </li>
         </ul>
       </div>
-      <div className="navbar-end">
-        <a className="btn">Button</a>
-        <button className="btn">btn</button>
+      <div className="navbar-end gap-4">
+        <div className="relative">
+          <button className="btn btn-circle btn btn-circle bg-white ">
+            <img className="w-3/5" src="./cart.png" alt="" />
+          </button>
+          <h1 className="absolute bottom-8 left-8 text-red-900 font-bold bg-yellow-300 rounded-full px-2">
+            {cartLength !== 0 ? cartLength : ""}
+          </h1>
+        </div>
+        <div className="relative">
+          <button className="btn btn-circle btn btn-circle bg-white ">
+            <img className="w-3/5" src="./heart.png" alt="" />
+          </button>
+          <h1 className="absolute bottom-8 left-8 text-red-900 font-bold bg-yellow-300 rounded-full px-2">
+            {favLength !== 0 ? favLength : ""}
+          </h1>
+        </div>
       </div>
     </div>
   );
