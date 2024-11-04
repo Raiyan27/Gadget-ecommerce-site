@@ -1,21 +1,30 @@
 import React from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { getCartList } from "../utils/addToCart";
 import { getFavList } from "../utils/addToFav";
 
 const Header = () => {
   const location = useLocation();
+  const navigate = useNavigate();
 
   const isHome = location.pathname === "/";
   const isStatistics = location.pathname === "/statistics";
   const isDashboard = location.pathname === "/dashboard";
   const isLatest = location.pathname === "/whatsNew";
-  const inCart = getCartList();
 
+  const inCart = getCartList();
   const cartLength = inCart.length;
 
   const inFav = getFavList();
   const favLength = inFav.length;
+
+  const handleCartClick = () => {
+    navigate("/dashboard");
+  };
+
+  const handleFavClick = () => {
+    navigate("/dashboard");
+  };
 
   return (
     <div
@@ -46,10 +55,36 @@ const Header = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a>Item 1</a>
+              <NavLink
+                to="/"
+                className={`text-lg  ${isHome ? "underline" : ""}`}
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <a>Item 3</a>
+              <NavLink
+                to="/statistics"
+                className={`text-lg ${isStatistics ? "underline" : ""}`}
+              >
+                Statistics
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/dashboard"
+                className={`text-lg ${isDashboard ? "underline" : ""}`}
+              >
+                Dashboard
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/whatsNew"
+                className={`text-lg ${isLatest ? "underline" : ""}`}
+              >
+                What's New?
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -58,7 +93,7 @@ const Header = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <NavLink to="/" className={`text-lg  ${isHome ? "underline" : ""}`}>
+            <NavLink to="/" className={`text-lg ${isHome ? "underline" : ""}`}>
               Home
             </NavLink>
           </li>
@@ -90,16 +125,16 @@ const Header = () => {
       </div>
       <div className="navbar-end gap-4">
         <div className="relative">
-          <button className="btn btn-circle btn btn-circle bg-white ">
-            <img className="w-3/5" src="/cart.png" alt="" />
+          <button onClick={handleCartClick} className="btn btn-circle bg-white">
+            <img className="w-3/5" src="/cart.png" alt="Cart Icon" />
           </button>
           <h1 className="absolute bottom-8 left-8 text-red-900 font-bold bg-yellow-300 rounded-full px-2">
             {cartLength !== 0 ? cartLength : ""}
           </h1>
         </div>
         <div className="relative">
-          <button className="btn btn-circle btn btn-circle bg-white ">
-            <img className="w-3/5" src="/heart.png" alt="" />
+          <button onClick={handleFavClick} className="btn btn-circle bg-white">
+            <img className="w-3/5" src="/heart.png" alt="Heart Icon" />
           </button>
           <h1 className="absolute bottom-8 left-8 text-red-900 font-bold bg-yellow-300 rounded-full px-2">
             {favLength !== 0 ? favLength : ""}

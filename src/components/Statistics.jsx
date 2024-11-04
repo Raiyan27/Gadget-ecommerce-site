@@ -18,7 +18,7 @@ const Statistics = () => {
       </div>
 
       <div className="flex justify-center mt-8">
-        <BarChart width={600} height={300} data={data}>
+        <BarChart width={1500} height={300} data={data}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="title" />
           <YAxis />

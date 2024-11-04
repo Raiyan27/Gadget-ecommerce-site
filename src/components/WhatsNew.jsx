@@ -103,7 +103,7 @@ const WhatsNew = () => {
                 <p className="text-lg font-bold mb-2">
                   ${review.price.toFixed(2)}
                 </p>
-                <p className="text-gray-500">Rating: {review.rating} ⭐</p>
+                <p className="text-gray-500">Rating: {review.rating}</p>
                 <h3 className="font-semibold mt-4">Specifications:</h3>
                 <ul className="list-disc list-inside text-gray-700 mb-2">
                   {review.specifications.map((spec, index) => (

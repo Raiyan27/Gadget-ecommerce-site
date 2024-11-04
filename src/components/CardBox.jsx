@@ -19,7 +19,7 @@ const CardBox = () => {
   return (
     <>
       <h1 className="text-4xl text-center">Explore Cutting-Edge Gadgets</h1>
-      <div className="flex justify-around container mx-auto border p-10 rounded-3xl mb-10">
+      <div className="flex flex-col md:flex-row justify-around container mx-auto border p-10 rounded-3xl mb-10">
         <div className="flex flex-col gap-4 p-4">
           <button
             className={`btn ${
@@ -66,7 +66,7 @@ const CardBox = () => {
             Smartwatch
           </button>
         </div>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {filteredGadgets.length > 0 ? (
             filteredGadgets.map((gadget) => (
               <Gadget key={gadget.id} gadget={gadget} />
