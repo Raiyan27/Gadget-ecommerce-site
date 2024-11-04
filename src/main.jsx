@@ -7,6 +7,8 @@ import ErrorPage from "./pages/ErrorPage.jsx";
 import Banner from "./components/Banner.jsx";
 import DashBoard from "./pages/DashBoard.jsx";
 import GadgetDetail from "./components/GadgetDetail.jsx";
+import WhatsNew from "./components/WhatsNew.jsx";
+import Statistics from "./components/Statistics.jsx";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -32,7 +34,11 @@ const router = createBrowserRouter([
       },
       {
         path: "statistics",
-        element: <div>NOTHING HERE</div>,
+        element: <Statistics />,
+      },
+      {
+        path: "whatsNew",
+        element: <WhatsNew />,
       },
     ],
   },

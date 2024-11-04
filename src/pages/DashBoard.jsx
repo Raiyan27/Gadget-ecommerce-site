@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useLoaderData, useNavigate } from "react-router-dom";
 import { getCartList, setCartList } from "../utils/addToCart";
 import { getFavList, setFavList } from "../utils/addToFav";
+import { Helmet } from "react-helmet";
 
 const DashBoard = () => {
   const [showCart, setShowCart] = useState(true);
@@ -71,6 +72,9 @@ const DashBoard = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Dashboard || Gadget Haven</title>
+      </Helmet>
       <div className="text-center bg-[#9538E2] p-10">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-3xl font-bold text-white mb-4">Dashboard</h1>
@@ -114,6 +118,7 @@ const DashBoard = () => {
                 <button
                   onClick={handlePurchase}
                   className="btn bg-[#9538E2] text-white rounded-full"
+                  disabled={cart.length === 0 || totalPrice === 0}
                 >
                   Purchase
                 </button>
@@ -206,7 +211,7 @@ const DashBoard = () => {
             <h2 className="text-2xl font-semibold mb-4">Payment Successfull</h2>
             <p className="text-lg mb-4">
               Thanks for purchasing <br />
-              <span className="text-bold">Total: ${totalPrice.toFixed(2)}</span>
+              <span className="font-bold">Total: ${totalPrice.toFixed(2)}</span>
               .
             </p>
             <button

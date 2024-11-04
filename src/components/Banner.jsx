@@ -1,9 +1,20 @@
+import { useNavigate } from "react-router-dom";
 import CardBox from "./CardBox.jsx";
-
+import { Helmet } from "react-helmet";
 const Banner = () => {
+  const navigate = useNavigate();
+
+  const handleNavigate = () => {
+    console.log("Button clicked"); // Debugging line
+    navigate("/dashboard");
+  };
+
   return (
     <>
-      <div className="flex flex-col items-center justify-center border bg-[#9538E2] container mx-auto rounded-b-3xl p-20  relative pb-72 mb-96 -mt-5 -z-10">
+      <Helmet>
+        <title>Home || Gadget Haven</title>
+      </Helmet>
+      <div className="flex flex-col items-center justify-center  bg-[#9538E2] container mx-auto rounded-b-3xl p-20 relative pb-72 mb-96 ">
         <div className="text-center">
           <div className="max-w-3xl mx-auto">
             <h1 className="text-5xl font-bold text-white mb-4">
@@ -14,7 +25,10 @@ const Banner = () => {
               next level. From smart devices to the coolest accessories, we have
               it all!
             </p>
-            <button className="btn bg-white text-[#9538E2] text-lg rounded-full px-8 py-2">
+            <button
+              onClick={handleNavigate}
+              className="btn bg-white text-[#9538E2] text-lg rounded-full px-8 py-2 hover:bg-yellow-50"
+            >
               Shop Now!
             </button>
           </div>
