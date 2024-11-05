@@ -14,7 +14,7 @@ const Banner = () => {
       <Helmet>
         <title>Home || Gadget Haven</title>
       </Helmet>
-      <div className="flex flex-col items-center justify-center   bg-[#9538E2] container mx-auto rounded-b-3xl p-20 relative pb-44 lg:pb-72 mb-32 lg:mb-96 ">
+      <div className="flex flex-col items-center justify-center   bg-[#9538E2] container mx-auto rounded-b-3xl p-20 relative pb-44 md:pb-52 lg:pb-72 mb-32 md:mb-72 lg:mb-96 ">
         <div className="text-center">
           <div className="max-w-3xl mx-auto">
             <h1 className="text-5xl font-bold text-white mb-4">
@@ -34,7 +34,7 @@ const Banner = () => {
           </div>
         </div>
 
-        <div className="absolute bottom-[-100px] lg:bottom-[-370px] p-6 border rounded-2xl w-4/5 lg:w-3/5 backdrop-blur-md">
+        <div className="absolute bottom-[-100px] md:bottom-[-250px] lg:bottom-[-370px] p-6 border rounded-2xl w-4/5 lg:w-3/5 backdrop-blur-md">
           <img src="./banner.jpg" alt="VR Headset" className="" />
         </div>
       </div>

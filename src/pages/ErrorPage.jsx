@@ -1,12 +1,22 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const ErrorPage = () => {
+  const navigate = useNavigate();
+
   return (
-    <div>
-      <h2 className="text5xl">Error: Page Not Found</h2>
+    <div className="bg-[#9538E2] p-10">
+      <div className="max-w-3xl mx-auto text-center">
+        <h1 className="text-5xl font-bold text-white mb-4">ERROR</h1>
+        <p className="text-lg text-white mb-6">PAGE NOT FOUND!</p>
+        <button
+          onClick={() => navigate("/")}
+          className="bg-white text-[#9538E2] font-bold py-2 px-4  hover:bg-purple-200 rounded-full"
+        >
+          GO TO HOME
+        </button>
+      </div>
     </div>
   );
 };
 
 export default ErrorPage;
-<h2 className="text5xl">Error: Page Not Found</h2>;
