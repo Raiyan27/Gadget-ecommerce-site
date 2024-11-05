@@ -23,22 +23,22 @@ const router = createBrowserRouter([
         element: <Banner />,
       },
       {
-        path: "gadget/:id",
+        path: "/gadget/:id",
         element: <GadgetDetail />,
         loader: () => fetch("/gadgets.json"),
       },
       {
-        path: "dashboard",
+        path: "/dashboard",
         element: <DashBoard />,
         loader: () => fetch("/gadgets.json"),
       },
       {
-        path: "statistics",
+        path: "/statistics",
         element: <Statistics />,
         loader: () => fetch("/gadgets.json"),
       },
       {
-        path: "whatsNew",
+        path: "/whatsNew",
         element: <WhatsNew />,
       },
     ],

@@ -106,12 +106,12 @@ const DashBoard = () => {
       <div className="max-w-3xl mx-auto p-6">
         {showCart ? (
           <div>
-            <div className="flex flex-cols lg:flex-row justify-between items-center">
+            <div className="flex flex-col md:flex-row justify-between items-center">
               <h2 className="text-2xl font-semibold mb-4">Your Cart</h2>
+              <span className="text-lg font-semibold text-[#9538E2]">
+                Total: ${totalPrice.toFixed(2)}
+              </span>
               <div className="flex gap-4 items-center">
-                <span className="text-lg font-semibold text-[#9538E2]">
-                  Total: ${totalPrice.toFixed(2)}
-                </span>
                 <button onClick={handleSort} className="btn rounded-full">
                   Sort by Price ({isSortedDesc ? "Ascending" : "Descending"})
                 </button>

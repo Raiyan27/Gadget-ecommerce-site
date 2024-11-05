@@ -61,7 +61,7 @@ const GadgetDetail = () => {
             </p>
           </div>
         </div>
-        <div className="flex max-w-4xl mx-auto bg-white p-10 gap-12 rounded-lg shadow-lg -mt-72 mb-32">
+        <div className="flex flex-col justify-center items-center md:flex-row max-w-4xl mx-auto bg-white p-10 gap-12 rounded-lg shadow-lg -mt-72 mb-32">
           <div className="max-w-[350px] rounded-lg p-4">
             <img
               src={image}

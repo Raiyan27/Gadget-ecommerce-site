@@ -8,7 +8,7 @@ const Gadget = ({ gadget }) => {
       <div className="card   bg-white ">
         <div className="p-4 ">
           <img
-            className="rounded-xl flex justify-center items-center w-[370px] h-[350px]"
+            className="rounded-xl flex justify-center items-center w-[300px] h-[200px] md:w-[370px] md:h-[350px]"
             src={image}
             alt={title}
           />
