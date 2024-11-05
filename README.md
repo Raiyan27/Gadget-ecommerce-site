@@ -32,4 +32,4 @@ This project uses **local storage** to manage cart and wishlist data, allowing u
 
 ## Requirement Document Link
 
-- [Requirement Document](REQUIREMENT.pdf)
+- [Requirement Document](REQUIREMENTS.pdf)
