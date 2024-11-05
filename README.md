@@ -23,12 +23,12 @@ A React-based e-commerce web application for gadgets and electronics, allowing u
 
 ## Data Handling and Management
 
-This project uses **local storage** to manage cart and wishlist data, allowing users to maintain their selections even after page refreshes.
+This project uses **local storage** to manage cart and wishlist data, allowing users to maintain their selections even after page refreshes or new sessions.
 
 ## Live Link
 
-- **Surge**
-- **Netlify**
+- **Surge** - https://gadget-haven.surge.sh/
+- **Netlify** - https://gadget-heven.netlify.app/
 
 ## Requirement Document Link
 

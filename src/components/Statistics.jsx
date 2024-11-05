@@ -1,6 +1,7 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid } from "recharts";
+import { Helmet } from "react-helmet";
 
 const Statistics = () => {
   // Retrieve data using the loader
@@ -8,6 +9,9 @@ const Statistics = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Stats || Gadget Haven</title>
+      </Helmet>
       <div className="bg-[#9538E2] p-10">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-3xl font-bold text-white mb-4">Statistics</h1>
